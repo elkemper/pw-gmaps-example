@@ -1,0 +1,14 @@
+{
+  "name": "gmaps-example",
+  "version": "0.0.1",
+  "description": "Example project to use the playwright-abstract-element",
+  "main": "index.js",
+  "author": "Vladislav Belous",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.7.4",
+    "playwright": "^1.47.2",
+    "playwright-abstract-element": "git+ssh://git@github.com:elkemper/playwright-abstract-element.git",
+    "typescript": "^5.6.2"
+  }
+}
