@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Vladislav Belous",
   "license": "MIT",
+  "scripts": {
+    "test": "playwright test --ui"
+  },
   "dependencies": {
     "@types/node": "^22.7.4",
     "playwright": "^1.47.2",

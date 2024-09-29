@@ -4,5 +4,5 @@ export default defineConfig({
   use: {
     baseURL: 'https://maps.google.com/',
   },
-  testDir: './src/specs'
+  testDir: './src/specs',
 });

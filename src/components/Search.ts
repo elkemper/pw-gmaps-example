@@ -1,7 +1,7 @@
 import AbstractElement, { Selector } from 'playwright-abstract-element';
 import IconButton from '../elements/IconButton';
 
-export class SearchInput extends AbstractElement {
+class SearchInput extends AbstractElement {
   protected override selector: Selector;
   constructor(parent?: AbstractElement) {
     super(parent);
@@ -23,12 +23,13 @@ class SearchSuggestionBox extends AbstractElement {
       const index = await item.getAttribute('data-index');
       const allTexts = await item.locator('span.fontBodyMedium').allInnerTexts();
       const mainText = allTexts.filter(Boolean)[0];
-      
+
       return new SearchSuggestionItem(index, mainText, this);
     });
     return await Promise.all(items);
   }
 }
+
 class SearchSuggestionItem extends AbstractElement {
   protected override selector: Selector;
   constructor(index: string, public readonly mainText: string, parent?: AbstractElement) {
