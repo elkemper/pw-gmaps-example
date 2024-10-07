@@ -8,13 +8,14 @@ Yarn package manager
 Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone git@github.com:elkemper/pw-gmaps-example.git
+cd pw-gmaps-example
 ```
 ### Install Dependencies
 
 ```bash
 yarn install
+npx playwright install
 ```
 ## Running Tests
 ### To execute the Playwright tests in headed mode:
